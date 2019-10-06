@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.acastro.restapi.dao;
+package com.acastro.restapi.Bo;
 
 import com.acastro.restapi.model.Operacion;
 
@@ -11,8 +11,10 @@ import com.acastro.restapi.model.Operacion;
  *
  * @author Usuario
  */
-public interface IOperacionDao {
+public interface ICubeSummation {
     
-    public String saveCube(Operacion operacion);
+    public String resolveCube(String dataInput);
+    
+    public String guardarCube(Operacion operacion) throws Exception;
     
 }

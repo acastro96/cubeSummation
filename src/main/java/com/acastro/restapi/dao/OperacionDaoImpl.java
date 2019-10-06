@@ -5,6 +5,8 @@
  */
 package com.acastro.restapi.dao;
 
+import com.acastro.restapi.model.Operacion;
+
 /**
  *
  * @author Usuario
@@ -12,15 +14,13 @@ package com.acastro.restapi.dao;
 public class OperacionDaoImpl implements IOperacionDao{
 
     @Override
-    public String resolveCube(String dataInput) {
-        String result = "";
+    public String saveCube(Operacion operacion) {
         
-        //obtenemos las lineas de entrada
-        String lines[] = dataInput.split("\\r?\\n");
+        //Aqui hago el codigo de FireBase
         
+        return "Datos guardados exitosamente";
         
-        
-        return result;
     }
+
     
 }
